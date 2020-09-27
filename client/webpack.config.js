@@ -18,6 +18,9 @@ module.exports = {
                     plugins: ["@babel/plugin-transform-runtime", '@babel/plugin-proposal-class-properties']
                 }
             }
+        }, {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader']
         }]
     },
     devtool: 'cheap-module-eval-source-map',
